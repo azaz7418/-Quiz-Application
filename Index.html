@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Interactive Quiz Application" />
+    <title>Interactive Quiz App</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Landing Page -->
+    <header>
+      <h1>Quiz App</h1>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#instructions">Instructions</a>
+      </nav>
+      <button id="start-quiz">Start Quiz</button>
+    </header>
+    <div class="questionSection">
+      <section id="instructions">
+        <h2>How to Play</h2>
+        <p>Answer each question by selecting one of the choices. Good luck!</p>
+      </section>
+
+      <div class="quiz-section">
+        <!-- Quiz Section -->
+        <section id="quiz-section" class="hidden">
+          <h2>Question <span id="current-question"></span></h2>
+          <p id="question-text"></p>
+          <div id="choices-container"></div>
+          <button id="next-question" class="hidden">Next</button>
+        </section>
+
+        <!-- Results Section -->
+        <section id="results-section" class="hidden">
+          <h2>Quiz Results</h2>
+          <p id="score"></p>
+          <button id="restart-quiz">Retake Quiz</button>
+        </section>
+      </div>
+    </div>
+
+    <section id="about">
+      <h2>About</h2>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi recusandae pariatur ipsa est sequi quos libero
+        mollitia obcaecati, non quibusdam quia optio vitae aliquam commodi quis exercitationem fuga architecto, cumque
+        eaque dolorem ea sint error facilis. Placeat ipsam, tempora qui, laborum aperiam quod tenetur accusamus quo illo
+        ipsa et at autem doloremque! Quos eveniet saepe iusto voluptates, nobis eos praesentium dolorum! Sunt, eum iure,
+        consequatur animi voluptate accusamus voluptates veritatis doloremque quidem dolorum corrupti obcaecati numquam
+        labore, distinctio suscipit exercitationem ullam. Animi, sit pariatur, numquam sint quas sequi vitae quaerat ex
+        earum eum, nemo blanditiis cupiditate temporibus similique ipsam dolor.
+      </p>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>

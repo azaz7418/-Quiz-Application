@@ -1,0 +1,84 @@
+body {
+  font-family: Arial, sans-serif;
+  /* line-height: 1.6; */
+  background-color: black;
+  color: aliceblue;
+}
+
+.hidden {
+  display: none;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #00ff99;
+  border-bottom: 2px solid #00ff99;
+}
+a {
+  text-decoration: none;
+  color: aliceblue;
+  margin-right: 15px;
+  font-size: large;
+}
+a:hover {
+  color: #00ff99;
+}
+
+* Quiz choice styling */ #choices-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.choice {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  /* background-color: #f0f0f0; */
+  /* border: 1px solid #ccc; */
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* .choice:hover {
+  background-color: #e0e0e0;
+} */
+
+.choice-label {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  margin-right: 10px;
+  cursor: pointer;
+  background-color: #00ff99;
+  border: none;
+  border-radius: 4px;
+}
+button:hover {
+  background-color: #0ce890;
+}
+
+button:disabled {
+  cursor: not-allowed;
+  background-color: #ccc;
+}
+
+.questionSection {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  padding: 5px;
+}
+.quiz-section {
+  display: flex;
+  align-items: start;
+  justify-content: start;
+}
